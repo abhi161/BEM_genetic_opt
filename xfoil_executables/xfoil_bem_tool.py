@@ -51,13 +51,13 @@ def xfoil_interact(foil, re, alfa_strt, alfa_end, alfa_step):
 ######################## PARAMETERS ########################
 
 
-re_strt = 100000
-re_end = 100000
+re_strt = 200000
+re_end = 200000
 re_step = 1
 re_num = int((re_end-re_strt)/re_step) + 1
 
 
-alfa_strt = 11
+alfa_strt = 0
 alfa_end = 22
 alfa_step = 1
 alfa_num = int((alfa_end-alfa_strt)/alfa_step)+1
@@ -201,7 +201,7 @@ for file_name in os.listdir(folder_path):
             tbl[tbl_strt:tbl_end,4] = cd_list
        
 
-outfile_path = 'xfoil_executables\output3.csv'
+outfile_path = 'xfoil_executables\output11.csv'
 
 should_write = True
 for row in tbl:
